@@ -4,14 +4,59 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d3e6de2-54e6-4807-a987-c166f0be330e" name="Changes" comment="" />
+    <list default="true" id="0d3e6de2-54e6-4807-a987-c166f0be330e" name="Changes" comment="start --">
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithJdbcTemplate/TestConfigClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithJdbcTemplate/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithJdbcTemplate/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithJdbcTemplate/UserRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithSimpleJdbc/TestConfigClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithSimpleJdbc/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithSimpleJdbc/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithSimpleJdbc/configSimpleJdbc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/TestConfigClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/UserRowMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceConfigXml/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceConfigXml/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/TestExcuteQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/classConfig/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/classConfig/EmployDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/classConfig/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/classConfig/TestConfigClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourcewithClassConfig/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourcewithClassConfig/TestDriverManagerDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourcewithClassConfig/TestHIkariDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourcewithClassConfig/TestSimpleDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="spring-beans.schema" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2IIempGBdtK9pMYtH8FS2i2NS5M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -23,9 +68,107 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "D:/SPRING/dataAccess/src/main/java/JDBCTemplateWithSimpleJdbc",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "spring.configuration.checksum": "602c13cba180e5f17cd6c34de4717dc8"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
+    ]
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SPRING\dataAccess\src\main\java\JDBCTemplateWithSimpleJdbc" />
+      <recent name="D:\SPRING\dataAccess\src\main\java\JDBCnameParameterJdbcTemplate" />
+      <recent name="D:\SPRING\dataAccess\src\main\java\JDBCTemplateWithJdbcTemplate" />
+      <recent name="D:\SPRING\dataAccess\src\main\java\dataSourceJdbcTemplate" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="dataSourceJdbcTemplate.classConfig" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.JDBCTemplateWithSimpleJdbc.TestConfigClass">
+    <configuration name="JDBCTemplateWithJdbcTemplate.TestConfigClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBCTemplateWithJdbcTemplate.TestConfigClass" />
+      <module name="dataAccess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBCTemplateWithJdbcTemplate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCTemplateWithSimpleJdbc.TestConfigClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBCTemplateWithSimpleJdbc.TestConfigClass" />
+      <module name="dataAccess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBCTemplateWithSimpleJdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="JDBCnameParameterJdbcTemplate.TestConfigClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="JDBCnameParameterJdbcTemplate.TestConfigClass" />
+      <module name="dataAccess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="JDBCnameParameterJdbcTemplate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestConfigClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dataSourceJdbcTemplate.classConfig.TestConfigClass" />
+      <module name="dataAccess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dataSourceJdbcTemplate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestExcuteQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dataSourceJdbcTemplate.TestExcuteQuery" />
+      <module name="dataAccess" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dataSourceJdbcTemplate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JDBCTemplateWithSimpleJdbc.TestConfigClass" />
+        <item itemvalue="Application.JDBCnameParameterJdbcTemplate.TestConfigClass" />
+        <item itemvalue="Application.JDBCTemplateWithJdbcTemplate.TestConfigClass" />
+        <item itemvalue="Application.TestConfigClass" />
+        <item itemvalue="Application.TestExcuteQuery" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -34,7 +177,49 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1669873689735</updated>
+      <workItem from="1669873691483" duration="21447000" />
+      <workItem from="1669960308722" duration="10535000" />
+      <workItem from="1670129965242" duration="873000" />
+      <workItem from="1670214280885" duration="3674000" />
     </task>
+    <task id="LOCAL-00001" summary="start --">
+      <created>1669873946438</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669873946438</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="master" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="start --" />
+    <option name="LAST_COMMIT_MESSAGE" value="start --" />
   </component>
 </project>
