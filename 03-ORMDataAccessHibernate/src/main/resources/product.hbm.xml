@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="ir.digixo.p01Hibernate.entities.Product" table="product">
+        <meta attribute="class-description">
+            product detail
+        </meta>
+
+        <id name="id" type="java.lang.Long" column="id">
+            <generator class="identity"/>
+        </id>
+        <property name="name" column="name" type="string"/>
+        <property name="price" column="price" type="int"/>
+
+
+       <many-to-one name="category" class="ir.digixo.p01Hibernate.entities.Category">
+           <column name="category_id" not-null="false"/>
+       </many-to-one>
+    </class>
+</hibernate-mapping>

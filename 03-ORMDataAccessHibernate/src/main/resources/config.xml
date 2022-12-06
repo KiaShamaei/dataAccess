@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:jee="http://www.springframework.org/schema/jee"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd
+       http://www.springframework.org/schema/jee
+       http://www.springframework.org/schema/jee/spring-jee.xsd
+       http://www.springframework.org/schema/tx
+       http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd
+
+"
+
+>
+
+    <context:property-placeholder location="jdbc.properties"/>
+    <!-- <jee:jndi-lookup id="myDataSource1" jndi-name="java:comp/env/jdbc/myds"/>-->
+    <bean id="myDataSource"
+          class="org.apache.commons.dbcp2.BasicDataSource">
+        <property name="driverClassName" value="${jdbc.driverClassName}"/>
+        <property name="url" value="${jdbc.url}"/>
+        <property name="username" value="${jdbc.username}"/>
+        <property name="password" value="${jdbc.password}"/>
+    </bean>
+    <!--SESSIONFACTORY Bean-->
+    <!--rah 1-->
+    <bean id="mySessionFactory"
+          class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="myDataSource"/>
+        <property name="mappingResources">
+            <list>
+                <value>product.hbm.xml</value>
+                <value>category.hbm.xml</value>
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <value>
+                hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+                show_sql=true
+          <!--      hibernate.hbm2ddl.auto=true-->
+            </value>
+        </property>
+    </bean>
+    <!--rah 1-->
+    <!--rah 2-->
+    <bean id="mySessionFactory2" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean"
+          p:dataSource-ref="myDataSource"
+          p:packagesToScan="ir.digixo.p01Hibernate.entities"
+          p:hibernateProperties-ref="hibernateProperties"
+    />
+    <util:properties id="hibernateProperties">
+        <prop key="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</prop>
+        <prop key="show_sql">true</prop>
+        <prop key="hibernate.jdbc.fetch.size">50</prop>
+    </util:properties>
+    <!--rah 2-->
+
+
+
+
+    <bean id="transactionManager"
+          class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="mySessionFactory"/>
+    </bean>
+    <tx:annotation-driven/>
+
+    <bean id="myProductDao" class="ir.digixo.p01Hibernate.dao.HibernateProductDao">
+        <property name="sessionFactory" ref="mySessionFactory"/>
+    </bean>
+    <bean id="myProductService" class="ir.digixo.p01Hibernate.service.ProductServiceImpl">
+        <property name="productDao" ref="myProductDao"/>
+    </bean>
+</beans>

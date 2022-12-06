@@ -4,40 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d3e6de2-54e6-4807-a987-c166f0be330e" name="Changes" comment="start --">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithJdbcTemplate/TestConfigClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithJdbcTemplate/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithJdbcTemplate/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithJdbcTemplate/UserRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithSimpleJdbc/TestConfigClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithSimpleJdbc/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithSimpleJdbc/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCTemplateWithSimpleJdbc/configSimpleJdbc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/TestConfigClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/UserRowMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceConfigXml/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceConfigXml/config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/TestExcuteQuery.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/classConfig/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/classConfig/EmployDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/classConfig/Employee.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/classConfig/TestConfigClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourceJdbcTemplate/config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourcewithClassConfig/DataSourceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourcewithClassConfig/TestDriverManagerDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourcewithClassConfig/TestHIkariDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/dataSourcewithClassConfig/TestSimpleDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/jdbc.properties" afterDir="false" />
+    <list default="true" id="0d3e6de2-54e6-4807-a987-c166f0be330e" name="Changes" comment="add jdbcTemplate">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +148,7 @@
       <workItem from="1669873691483" duration="21447000" />
       <workItem from="1669960308722" duration="10535000" />
       <workItem from="1670129965242" duration="873000" />
-      <workItem from="1670214280885" duration="3674000" />
+      <workItem from="1670214280885" duration="4061000" />
     </task>
     <task id="LOCAL-00001" summary="start --">
       <created>1669873946438</created>
@@ -189,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669873946438</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="add jdbcTemplate">
+      <created>1670218421186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1670218421186</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,6 +195,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start --" />
-    <option name="LAST_COMMIT_MESSAGE" value="start --" />
+    <MESSAGE value="add jdbcTemplate" />
+    <option name="LAST_COMMIT_MESSAGE" value="add jdbcTemplate" />
   </component>
 </project>
