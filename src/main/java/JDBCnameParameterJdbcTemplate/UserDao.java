@@ -58,38 +58,49 @@ public class UserDao {
 
     }
 
-    public User saveOrUpdate(User user) {
+    public Object saveOrUpdate(User user) {
         var sqlFind = " select *  from users where id = :id ";
-        var sql = " insert into  users (first_name, last_name , email ,password) values(:first_name,:last_name,:email , :password)";
+        var sql = " insert into  users (first_name, last_name , email ,password) values( :first_name, :last_name, :email, :password)";
         var sqlUpdate = " UPDATE users  " +
                 " SET first_name = :first_name ,  last_name = :last_name ,  email = :email ,  password = :password " +
                 " WHERE id = :id ";
-        SqlParameterSource s = new MapSqlParameterSource("id", user.getId());
+
+        SqlParameterSource s = new MapSqlParameterSource("id", 37);
+
         Map<String, String> mapParam = new HashMap<String, String>();
-        var item = jdbcTemplate.queryForObject(sqlFind, s, userRowMapper);
-        if (item == null) {
+        Object result = null;
+        try {
+            var item = jdbcTemplate.query(sqlFind, s, userRowMapper);
+            if (item == null) {
 
-            mapParam.put("first_name", user.getFirst_name());
-            mapParam.put("last_name", user.getLast_name());
-            mapParam.put("email", user.getEmail());
-            mapParam.put("password", user.getPassword());
-            mapParam.put("id",String.valueOf(user.getId()));
-            SqlParameterSource ss = new MapSqlParameterSource(mapParam);
+                mapParam.put("first_name", user.getFirst_name());
+                mapParam.put("last_name", user.getLast_name());
+                mapParam.put("email", user.getEmail());
+                mapParam.put("password", user.getPassword());
+                mapParam.put("id",String.valueOf(user.getId()));
+                SqlParameterSource ss = new MapSqlParameterSource(mapParam);
 
-            return jdbcTemplate.queryForObject(sql, ss, userRowMapper);
+                jdbcTemplate.update(sql, ss);
+                result= user;
 
-        } else {
-            KeyHolder keyHolder = new GeneratedKeyHolder();
-            mapParam.put("first_name", user.getFirst_name());
-            mapParam.put("last_name", user.getLast_name());
-            mapParam.put("email", user.getEmail());
-            mapParam.put("password", user.getPassword());
-            mapParam.put("id",String.valueOf(user.getId()));
-            SqlParameterSource ss = new MapSqlParameterSource(mapParam);
-            SqlParameterSource sfind = new MapSqlParameterSource("id" , user.getId());
-            jdbcTemplate.update(sqlUpdate,ss,keyHolder);
-            return jdbcTemplate.queryForObject(sqlFind,sfind,userRowMapper);
+            } else {
+                KeyHolder keyHolder = new GeneratedKeyHolder();
+                mapParam.put("first_name", user.getFirst_name());
+                mapParam.put("last_name", user.getLast_name());
+                mapParam.put("email", user.getEmail());
+                mapParam.put("password", user.getPassword());
+                mapParam.put("id",String.valueOf(user.getId()));
+                SqlParameterSource ss = new MapSqlParameterSource(mapParam);
+                SqlParameterSource sfind = new MapSqlParameterSource("id" , user.getId());
+                jdbcTemplate.update(sqlUpdate,ss,keyHolder);
+                result= jdbcTemplate.query(sqlFind,sfind,userRowMapper);
+            }
+
+        }catch (Exception e){
+            System.out.println(e.toString());
         }
+        return result;
+
     }
 //
 //

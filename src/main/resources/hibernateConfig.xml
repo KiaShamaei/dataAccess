@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:p="http://www.springframework.org/schema/p" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+
+       http://www.springframework.org/schema/context
+       https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd">
+
+    <context:property-placeholder location="jdbc.properties"/>
+    <context:component-scan base-package="hibernateWithXml">
+    </context:component-scan>
+    <bean id="product" class="hibernateWithXml.entities.Product"></bean>
+    <bean id="category" class="hibernateWithXml.entities.Category"></bean>
+<!--    step1 for work with hibernate-->
+    <bean class="org.springframework.jdbc.datasource.DriverManagerDataSource"
+          id="dataSource"
+          p:driverClassName="com.mysql.cj.jdbc.Driver"
+          p:url="jdbc:mysql://127.0.0.1/newhibernatedb"
+          p:username="root"
+          p:password="KM@852147154"
+    />
+<!--    step 2 config sessionFactory  in this step we need dependency hibernate and properties and dataSource-->
+<!--    hibernate.core with id org.hibernate-->
+    <bean id="mySessionFactory" class="org.springframework.orm.hibernate5.LocalSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"></property>
+        <property name="packagesToScan" value="hibernateWithXml.entities"></property>
+        <property name="hibernateProperties">
+            <props>
+<!--                there is point which org.hibernate.dialect.MySQL5Dialect is need for MyISAM-->
+                <prop key="hibernate.dialect">org.hibernate.dialect.MySQL5Dialect</prop>
+                <prop key="hibernate.show_sql">true</prop>
+                <prop key="hibernate.hbm2ddl.auto">create</prop>
+            </props>
+        </property>
+        <property name="mappingResources">
+            <list>
+                <value>product.hbm.xml</value>
+                <value>category.hbm.xml</value>
+            </list>
+        </property>
+    </bean>
+<!--    add transaction config-->
+    <bean id="transactionManager"
+          class="org.springframework.orm.hibernate5.HibernateTransactionManager">
+        <property name="sessionFactory" ref="mySessionFactory"/>
+    </bean>
+    <tx:annotation-driven/>
+</beans>

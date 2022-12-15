@@ -4,8 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0d3e6de2-54e6-4807-a987-c166f0be330e" name="Changes" comment="add jdbcTemplate">
+    <list default="true" id="0d3e6de2-54e6-4807-a987-c166f0be330e" name="Changes" comment="add class source">
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/config/Config.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/dao/DaoImp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/entities/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/dao/HibernateProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/entities/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/entities/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/service/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/category.hbm.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernateConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/product.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/TestConfigClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/TestConfigClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/UserDao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,8 +34,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -26,55 +45,50 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="2IIempGBdtK9pMYtH8FS2i2NS5M" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "D:/SPRING/dataAccess/src/main/java/JDBCTemplateWithSimpleJdbc",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "spring.configuration.checksum": "602c13cba180e5f17cd6c34de4717dc8"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/SPRING/dataAccess/src/main/java/hibernateWithConfigClass&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6b33e089ec48d74a680d3566d0c20dcf&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\SPRING\dataAccess\src\main\java\hibernateWithConfigClass" />
+      <recent name="D:\SPRING\dataAccess\src\main\resources" />
+      <recent name="D:\SPRING\dataAccess\src\main\java\hibernateWithXml" />
       <recent name="D:\SPRING\dataAccess\src\main\java\JDBCTemplateWithSimpleJdbc" />
       <recent name="D:\SPRING\dataAccess\src\main\java\JDBCnameParameterJdbcTemplate" />
-      <recent name="D:\SPRING\dataAccess\src\main\java\JDBCTemplateWithJdbcTemplate" />
-      <recent name="D:\SPRING\dataAccess\src\main\java\dataSourceJdbcTemplate" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="dataSourceJdbcTemplate.classConfig" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.JDBCTemplateWithSimpleJdbc.TestConfigClass">
-    <configuration name="JDBCTemplateWithJdbcTemplate.TestConfigClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="JDBCTemplateWithJdbcTemplate.TestConfigClass" />
-      <module name="dataAccess" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="JDBCTemplateWithJdbcTemplate.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.hibernateWithConfigClass.Test">
     <configuration name="JDBCTemplateWithSimpleJdbc.TestConfigClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="JDBCTemplateWithSimpleJdbc.TestConfigClass" />
       <module name="dataAccess" />
@@ -101,12 +115,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestConfigClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dataSourceJdbcTemplate.classConfig.TestConfigClass" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernateWithXml.Test" />
       <module name="dataAccess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dataSourceJdbcTemplate.*" />
+          <option name="PATTERN" value="hibernateWithXml.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +128,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestExcuteQuery" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dataSourceJdbcTemplate.TestExcuteQuery" />
+    <configuration name="hibernateWithConfigClass.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="hibernateWithConfigClass.Test" />
       <module name="dataAccess" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="dataSourceJdbcTemplate.*" />
+          <option name="PATTERN" value="hibernateWithConfigClass.config.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ir.digixo.p01Hibernate.Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ir.digixo.p01Hibernate.Test" />
+      <module name="03-ORMDataAccessHibernate" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ir.digixo.p01Hibernate.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -129,11 +156,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JDBCTemplateWithSimpleJdbc.TestConfigClass" />
+        <item itemvalue="Application.hibernateWithConfigClass.Test" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.ir.digixo.p01Hibernate.Test" />
         <item itemvalue="Application.JDBCnameParameterJdbcTemplate.TestConfigClass" />
-        <item itemvalue="Application.JDBCTemplateWithJdbcTemplate.TestConfigClass" />
-        <item itemvalue="Application.TestConfigClass" />
-        <item itemvalue="Application.TestExcuteQuery" />
+        <item itemvalue="Application.JDBCTemplateWithSimpleJdbc.TestConfigClass" />
       </list>
     </recent_temporary>
   </component>
@@ -149,6 +176,11 @@
       <workItem from="1669960308722" duration="10535000" />
       <workItem from="1670129965242" duration="873000" />
       <workItem from="1670214280885" duration="4061000" />
+      <workItem from="1670302142951" duration="2940000" />
+      <workItem from="1670595019013" duration="7478000" />
+      <workItem from="1670954688560" duration="3585000" />
+      <workItem from="1670990372318" duration="3840000" />
+      <workItem from="1671080024576" duration="5793000" />
     </task>
     <task id="LOCAL-00001" summary="start --">
       <created>1669873946438</created>
@@ -164,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670218421186</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add class source">
+      <created>1670302422878</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1670302422879</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +220,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>
@@ -196,6 +235,33 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="start --" />
     <MESSAGE value="add jdbcTemplate" />
-    <option name="LAST_COMMIT_MESSAGE" value="add jdbcTemplate" />
+    <MESSAGE value="add class source" />
+    <option name="LAST_COMMIT_MESSAGE" value="add class source" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/UserDao.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/UserDao.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/UserDao.java</url>
+          <line>82</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/hibernateWithXml/dao/HibernateProductDao.java</url>
+          <line>17</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

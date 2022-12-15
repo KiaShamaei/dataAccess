@@ -9,8 +9,9 @@ public class TestConfigClass {
         var context = new AnnotationConfigApplicationContext(Config.class);
         var dao = context.getBean(UserDao.class);
 //        System.out.println(dao.findById(30));
-        User user = new User(35, "666999@gmail.com", "9666ima", "kiaBalapesar", "12346");
-        System.out.println(dao.saveOrUpdate(user));
+        User user = new User(37, "67777999@gmail.com", "9666ima", "kiaBalapesar", "12346");
+        var test  = dao.saveOrUpdate(user);
+        System.out.println(test.toString());
 
     }
 }

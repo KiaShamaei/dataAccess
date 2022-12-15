@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd" >
+
+<!--first way of defineing a map config for hibernate is make such file -->
+<hibernate-mapping>
+    <class name="hibernateWithXml.entities.Category">
+        <id name="id" type="java.lang.Long" column="id" >
+            <generator class="identity"></generator>
+        </id>
+        <property name="name" type="java.lang.String" column="name"></property>
+        <set name="products" inverse="true" cascade="all">
+            <key column="id" not-null="true"></key>
+            <one-to-many class="hibernateWithXml.entities.Product"></one-to-many>
+        </set>
+    </class>
+</hibernate-mapping>
