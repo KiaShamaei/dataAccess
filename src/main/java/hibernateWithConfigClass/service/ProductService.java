@@ -20,4 +20,7 @@ public class ProductService {
     public Product findById(int id){
         return this.daoImp.findById(id);
     }
+    public void productDelete(int id){
+        this.daoImp.delete(id);
+    }
 }

@@ -16,6 +16,7 @@ public class Test {
 //        service.addProduct(product);
         System.out.println("______________>");
         System.out.println(service.findById(3));
+        service.productDelete(1);
 
 
     }

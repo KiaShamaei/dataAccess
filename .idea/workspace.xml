@@ -5,26 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0d3e6de2-54e6-4807-a987-c166f0be330e" name="Changes" comment="add class source">
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/config/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/dao/DaoImp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/entities/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/entities/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/dao/HibernateProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/dao/ProductDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/entities/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/entities/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/service/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/hibernateWithXml/service/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/category.hbm.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/hibernateConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/product.hbm.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/TestConfigClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/TestConfigClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/JDBCnameParameterJdbcTemplate/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/dao/DaoImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/dao/DaoImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/entities/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/entities/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/service/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/hibernateWithConfigClass/service/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -180,7 +165,7 @@
       <workItem from="1670595019013" duration="7478000" />
       <workItem from="1670954688560" duration="3585000" />
       <workItem from="1670990372318" duration="3840000" />
-      <workItem from="1671080024576" duration="5793000" />
+      <workItem from="1671080024576" duration="8506000" />
     </task>
     <task id="LOCAL-00001" summary="start --">
       <created>1669873946438</created>
@@ -203,7 +188,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670302422879</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add class source">
+      <created>1671085949209</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671085949209</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,6 +1,7 @@
 package hibernateWithConfigClass.entities;
 
 
+import lombok.Data;
 import org.springframework.stereotype.Component;
 
 import javax.persistence.Entity;
@@ -11,6 +12,14 @@ import java.io.Serializable;
 
 @Entity(name = "Product")
 public class Product implements Serializable {
+    @Override
+    public String toString() {
+        return "Product{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", price=" + price +
+                '}';
+    }
 
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
