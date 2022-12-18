@@ -40,4 +40,12 @@ public class DaoImp {
         query.executeUpdate();
 
     }
+    public void deleteProduct(Product product)
+    {
+        sessionFactory.getCurrentSession().delete(product);
+    }
+    public void updateProduct(Product product)
+    {
+        sessionFactory.getCurrentSession().update(product);
+    }
 }
